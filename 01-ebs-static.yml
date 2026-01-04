@@ -20,10 +20,10 @@ spec:
   storageClassName: "" # Empty string must be explicitly set otherwise default StorageClass will be set
   volumeName: ebs-static
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany
   resources:
     requests:
-      storage: 35Gi
+      storage: 15Gi
 ---
 apiVersion: v1
 kind: Pod
